@@ -15,8 +15,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Fun Signup App',
       theme: ThemeData(primarySwatch: Colors.purple),
-      home: const SignupPage(),
+      debugShowCheckedModeBanner: false,
+      //home: const SignupPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const SignupPage(),
+        '/home': (context) => const HomeScreen(),
+      },
     );
   }
 }
+
+
 

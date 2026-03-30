@@ -124,10 +124,7 @@ class _SignupPageState extends State<SignupPage> {
                         backgroundColor: Colors.green,
                       ),
                     );
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const HomeScreen()),
-                    );
+                    Navigator.pushNamed(context, '/home');
                   }
                 },
                 style: ElevatedButton.styleFrom(
