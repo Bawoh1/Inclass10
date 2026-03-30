@@ -124,7 +124,7 @@ class _SignupPageState extends State<SignupPage> {
                         backgroundColor: Colors.green,
                       ),
                     );
-                    Navigator.pushNamed(context, '/home');
+                    Navigator.pushReplacementNamed(context, '/home', arguments: _nameController.text); // Pass the name to the home screen
                   }
                 },
                 style: ElevatedButton.styleFrom(
